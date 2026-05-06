@@ -1,0 +1,4 @@
+# Supabase CLI local artifacts (only used if/when supabase CLI is installed)
+.branches/
+.temp/
+.env

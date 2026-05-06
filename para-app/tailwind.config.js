@@ -1,0 +1,40 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./app/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
+  presets: [require('nativewind/preset')],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#00236f',
+        'primary-container': '#1e3a8a',
+        'primary-fixed': '#dce1ff',
+        'primary-fixed-dim': '#b6c4ff',
+        'on-primary': '#ffffff',
+        secondary: '#0058be',
+        'secondary-container': '#2170e4',
+        'on-secondary': '#ffffff',
+        surface: '#f7f9fb',
+        'surface-container-lowest': '#ffffff',
+        'surface-container-low': '#f2f4f6',
+        'surface-container': '#eceef0',
+        'surface-container-high': '#e6e8ea',
+        'on-surface': '#191c1e',
+        'on-surface-variant': '#444651',
+        outline: '#757682',
+        'outline-variant': '#c5c5d3',
+        'surface-tint': '#4059aa',
+        error: '#ba1a1a',
+        'error-container': '#ffdad6',
+      },
+      fontFamily: {
+        'space-grotesk': ['SpaceGrotesk_400Regular'],
+        'space-grotesk-bold': ['SpaceGrotesk_700Bold'],
+        'space-grotesk-light': ['SpaceGrotesk_300Light'],
+        manrope: ['Manrope_400Regular'],
+        'manrope-bold': ['Manrope_700Bold'],
+        'manrope-light': ['Manrope_200ExtraLight'],
+      },
+    },
+  },
+  plugins: [],
+};

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Manrope:wght@200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #00236f;
+  --color-primary-container: #1e3a8a;
+  --color-primary-fixed: #dce1ff;
+  --color-primary-fixed-dim: #b6c4ff;
+  
+  --color-secondary: #0058be;
+  --color-secondary-container: #2170e4;
+  
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f4f6;
+  --color-surface-container: #eceef0;
+  --color-surface-container-high: #e6e8ea;
+  
+  --color-on-surface: #191c1e;
+  --color-outline: #757682;
+}
+
+@layer base {
+  body {
+    @apply font-body bg-[#f7f9fb] text-on-surface;
+  }
+}
+
+.map-gradient-overlay {
+  background: linear-gradient(to top, rgba(247, 249, 251, 1) 0%, rgba(247, 249, 251, 0) 25%);
+}
+
+.heatmap-overlay {
+  background: radial-gradient(circle at 30% 40%, rgba(186, 26, 26, 0.15) 0%, transparent 40%),
+              radial-gradient(circle at 70% 60%, rgba(0, 88, 190, 0.1) 0%, transparent 50%);
+}
+
+.editorial-shadow {
+  box-shadow: 0 32px 64px -12px rgba(0, 35, 111, 0.08);
+}

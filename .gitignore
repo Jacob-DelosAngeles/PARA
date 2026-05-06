@@ -1,0 +1,25 @@
+# Windows / WSL interop noise
+*Zone.Identifier
+*:Zone.Identifier
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# iPhone screenshot workflow (current-state captures, not committed)
+**/.screenshots/
+
+# Local env files (sub-projects also ignore these, but defense-in-depth at root)
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Logs
+*.log
